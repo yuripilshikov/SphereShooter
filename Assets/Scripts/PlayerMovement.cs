@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Transform rotator;
     private Rigidbody cubeRb;
+    public Transform hull;
 
     public float speed = 5.0f;
     private Vector2 input;
@@ -41,8 +42,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void MovePlayer()
-    {
+    {        
         cubeRb.velocity = Vector3.Normalize(new Vector3(input.x, 0, input.y)) * speed;
+
+        hull.up = cubeRb.velocity;
+        //hull.forward = cubeRb.velocity;
+        
+        //transform.LookAt(moveDirection + transform.position)
     }
 
     void RotateTurret()
