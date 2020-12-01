@@ -1,4 +1,7 @@
 # SphereShooter
- A tutorial game project from book
+
+ A tutorial game project by book.
  
- This branch - some updates.
+ Decided to promote this one to a full game.
+
+
