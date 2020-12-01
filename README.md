@@ -1,2 +1,4 @@
 # SphereShooter
- A tutorial game project by bool
+ A tutorial game project from book
+ 
+ This branch - some updates.
