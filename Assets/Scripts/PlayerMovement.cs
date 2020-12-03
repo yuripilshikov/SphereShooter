@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     {        
         cubeRb.velocity = Vector3.Normalize(new Vector3(input.x, 0, input.y)) * speed;
 
-        hull.up = cubeRb.velocity; // TODO change when capsule will be replaced with actual ship
+        hull.forward = cubeRb.velocity; // TODO change when capsule will be replaced with actual ship
     }
 
     void RotateTurret()
