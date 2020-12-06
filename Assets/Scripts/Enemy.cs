@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour
 
         if(col.gameObject.CompareTag(playerTag))
         {
+            audioSource.Play();
             HealthManager.instance.ChangeHealth(-1);
             DestroyEnemy();
         }
